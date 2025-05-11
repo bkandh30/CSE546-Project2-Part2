@@ -83,8 +83,6 @@ The application implements a distributed pipeline to recognize faces in video fr
 
 ## Bonus Feature Implemented
 
-The project successfully implemented the bonus requirement:
-
 - If the face detection component on the Greengrass Core device processes a video frame and detects **no faces**, it directly pushes a response to the SQS response queue (`<ASU-ID>-resp-queue`).
 - This response payload contains a 'result' key with the value "No-Face".
 - This optimization improves response time and conserves cloud resources (Lambda invocations, SQS messages for recognition) when no faces are present.
