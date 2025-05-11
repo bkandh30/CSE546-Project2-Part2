@@ -19,6 +19,8 @@ The application implements a distributed pipeline to recognize faces in video fr
     - Produces classification results (names of recognized individuals).
 5.  **Result Retrieval:** The recognition results are sent to an SQS response queue. The original IoT client device retrieves these results from the response queue.
 
+![Architecture Diagram](architecture.png)
+
 ## Technologies Used
 
 - **AWS IoT Greengrass (v2):** Enables local compute, messaging, data caching, sync, and ML inference capabilities on edge devices.
